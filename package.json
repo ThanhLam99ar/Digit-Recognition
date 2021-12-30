@@ -1,29 +1,37 @@
 {
-  "name": "digit",
+  "name": "hwdigit",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "android": "expo run:android",
-    "ios": "expo run:ios",
-    "web": "expo start --web",
-    "start": "react-native start"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.1",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0"
   },
   "dependencies": {
-    "expo": "~43.0.2",
-    "expo-splash-screen": "~0.13.5",
-    "expo-status-bar": "~1.1.0",
-    "expo-updates": "~0.10.13",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "react-native": "0.64.3",
-    "react-native-gesture-handler": "~1.10.2",
-    "react-native-reanimated": "~2.2.0",
-    "react-native-safe-area-context": "3.3.2",
-    "react-native-screens": "~3.8.0",
-    "react-native-web": "0.17.1"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.12.9"
-  },
-  "private": true
+    "@emotion/react": "^11.7.0",
+    "@emotion/styled": "^11.6.0",
+    "@material-ui/core": "^4.12.3",
+    "@mui/material": "^5.2.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-favicon": "^0.0.25",
+    "react-helmet-async": "^1.2.2",
+    "react-image": "^4.0.3",
+    "react-router-dom": "^6.1.1"
+  }
 }
